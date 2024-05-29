@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #1a1a1a;
+    background-image: url(https://imgs.search.brave.com/ijmat90UJ-H8mw3p-mNRjrMMGt0168lOMg2YaX88rAI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA3LzI1LzUxLzE0/LzM2MF9GXzcyNTUx/MTQyMl9VUFFRUDlo/czM4cjYzVDI2cVFZ/WVJsczYwY3IzTWdE/Ty5qcGc);
+    background-size: cover; /* This makes the background image cover the whole area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: rgba(13, 13, 13, 0.8); /* Make header background slightly transparent */
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header .logo {
+    flex: 1;
+}
+
+.header nav {
+    flex: 2;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header nav ul li {
+    margin: 0;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.header .auth-buttons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header .auth-buttons a {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.header .auth-buttons .login:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.header .auth-buttons .get-started {
+    background: #4CAF50;
+    border: none;
+}
+
+.header .auth-buttons .get-started:hover {
+    background: #45a049;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #ccc;
+}
+
+.cta-form {
+    margin-top: 30px;
+}
+
+.cta-form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.cta-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta-form button:hover {
+    background: #45a049;
+}
+
+.footer {
+    background: rgba(13, 13, 13, 0.8); /* Make footer background slightly transparent */
+    padding: 20px 0;
+    text-align: center;
+    color: #ccc;
+}
+
+.footer .social-buttons {
+    margin-bottom: 20px;
+}
+
+.footer .social-buttons .social-button {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-buttons .social-button:hover {
+    color: #4CAF50;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+/* Add this CSS to styles.css or within a <style> tag in the head section */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content li {
+    display: block;
+}
+
+nav ul .dropdown-content li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+nav ul .dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
